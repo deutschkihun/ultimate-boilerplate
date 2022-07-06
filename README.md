@@ -6,11 +6,11 @@ https://www.npmjs.com/package/@deutschkihun/ultimate-boilerplate
 
 ## How to start 
 
-- Method 1: using npx 
 `npx @deutschkihun/ultimate-boilerplate [your project name]
 `
 
-- Method 2: using npm with git clone
+or 
+
 `git clone git@github.com:deutschkihun/ultimate-boilerplate.git
 `
 
