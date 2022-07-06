@@ -2,8 +2,6 @@
 
 this repository is a ultimate starter template for webpack,react,typescript and node. 
 
-https://www.npmjs.com/package/@deutschkihun/ultimate-boilerplate
-
 ## How to start 
 
 `npx @deutschkihun/ultimate-boilerplate [your project name]
