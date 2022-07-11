@@ -29,7 +29,14 @@ export const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
   a {
+    color: #fff;
     text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
   }
 
   @media screen and (min-width: 1000px) {
@@ -111,8 +118,8 @@ export const Grid = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 25px); 
-  grid-template-columns: repeat(12, 1fr); 
+  grid-template-rows: repeat(1, 25px);
+  grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: 200px;
   grid-gap: 20px;
   justify-items: center;
@@ -201,48 +208,6 @@ export const Home = styled(Link)`
 
   /* mobile device */
   @media screen and (max-width: 480px) {
-    display: none;
-  }
-`;
-
-export const Dropdown = styled.ul`
-  font-size: 15px;
-  grid-column: 7 / 8;
-  color: white;
-
-  .dropdown_menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    display: none;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border: 1px solid #fff;
-    z-index: 1;
-  }
-
-  .dropdown:hover .dropdown_menu {
-    font-size: 12px;
-    display: block;
-    width: 100px;
-    text-align: center;
-
-    a {
-      background-color: #151516;
-      color: white;
-      padding: 6px 16px;
-      text-decoration: none;
-      display: block;
-      z-index: 9999;
-    }
-
-    a:hover {
-      background-color: #fff;
-      color: #151516;
-    }
-  }
-  /* pc display min  */
-  @media screen and (max-width: 1000px) {
     display: none;
   }
 `;
@@ -419,8 +384,8 @@ export const Grid_Stage1 = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 100px); 
-  grid-template-columns: repeat(12, 78px); 
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(12, 78px);
   grid-gap: 24px;
   justify-items: center;
   padding: 1rem 0;
@@ -430,8 +395,8 @@ export const Grid_Stage2 = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 100px); 
-  grid-template-columns: repeat(6, 180px); 
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(6, 180px);
   grid-gap: 24px;
   justify-items: center;
   padding: 1rem 0;
@@ -441,8 +406,8 @@ export const Grid_Stage3 = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 100px); 
-  grid-template-columns: repeat(4, 285px); 
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(4, 285px);
   grid-gap: 20px;
   justify-items: center;
   padding: 1rem 0;
@@ -453,7 +418,7 @@ export const Grid_Stage4 = styled.div`
   margin: auto;
   display: grid;
   grid-template-rows: repeat(1, 100px);
-  grid-template-columns: repeat(3, 384px); 
+  grid-template-columns: repeat(3, 384px);
   grid-gap: 24px;
   justify-items: center;
   padding: 1rem 0;
@@ -463,8 +428,8 @@ export const Grid_Stage6 = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 100px); 
-  grid-template-columns: repeat(2, 588); 
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(2, 588);
   grid-gap: 24px;
   justify-items: center;
   padding: 1rem 0;
@@ -474,8 +439,8 @@ export const Grid_Stage12 = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 100px); 
-  grid-template-columns: repeat(1, 12); 
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(1, 12);
   justify-items: center;
   padding: 1rem 0;
 `;
@@ -484,8 +449,8 @@ export const Grid_Banner = styled.div`
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 300px); 
-  grid-template-columns: repeat(1, 12); 
+  grid-template-rows: repeat(1, 300px);
+  grid-template-columns: repeat(1, 12);
   justify-items: center;
   padding: 1rem 0;
 `;

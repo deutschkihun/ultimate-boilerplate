@@ -13,7 +13,7 @@ module.exports = {
   devtool: isProd ? "hidden-source-map" : "source-map",
   entry: "./src/index.tsx",
   output: {
-    filename: "[name].js", 
+    filename: "[name].js",
     // [name]은 chunk의 이름을 사용한다.
     path: path.join(__dirname, "/dist"),
   },
@@ -40,6 +40,10 @@ module.exports = {
         options: {
           name: "[name].[ext]?[hash]",
         },
+      },
+      {
+        test: /\.svg$/,
+        use: ["@svgr/webpack", "file-loader"],
       },
     ],
   },

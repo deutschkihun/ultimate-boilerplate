@@ -1,29 +1,35 @@
 import React from "react";
-import { Dropdown } from "../helper/lib";
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownContainer,
+} from "../helper/lib/Dropdown";
+import kr from "../assets/flag/kr.svg";
+import us from "../assets/flag/us.svg";
+import { useLocation } from "react-router-dom";
 
 export const DropdownComponent = (): JSX.Element => {
+  const { pathname } = useLocation();
   return (
     <Dropdown>
-      <li className="dropdown">
-        Dropdown
-        <ul className="dropdown_menu">
+      <DropdownContainer>
+        <img src={pathname.substr(1, 2) === "kr" ? kr : us} alt="flag" />
+        {pathname.substr(1, 2) === "kr" ? `Korean` : `English`}
+        <DropdownItem>
           <li>
-            <a href="#">Item 1</a>
+            <a href="/kr">
+              <img src={kr} alt="korea" />
+              Korean
+            </a>
           </li>
           <li>
-            <a href="#">Item 2</a>
+            <a href="/">
+              <img src={us} alt="korea" />
+              English
+            </a>
           </li>
-          <li>
-            <a href="#">Item 3</a>
-          </li>
-          <li>
-            <a href="#">Item 4</a>
-          </li>
-          <li>
-            <a href="#">Item 5</a>
-          </li>
-        </ul>
-      </li>
+        </DropdownItem>
+      </DropdownContainer>
     </Dropdown>
   );
 };
