@@ -30,5 +30,4 @@ or
 
     * margins: custom
 
-
 deployed url: https://deutschkihun-ultimate-boilerplate.netlify.app/
