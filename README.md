@@ -29,5 +29,3 @@ or
     * media-query: tablet-device (480px - 768px), mobile (under 480px), desktop(over 768px)
 
     * margins: custom
-
-deployed url: https://deutschkihun-ultimate-boilerplate.netlify.app/
