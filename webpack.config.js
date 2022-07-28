@@ -15,13 +15,7 @@ module.exports = {
   entry: {
     index: {
       import: "./src/index.tsx",
-      dependOn: "shared",
     },
-    another: {
-      import: "./src/another-module.tsx",
-      dependOn: "shared",
-    },
-    shared: "lodash",
   },
   output: {
     filename: "[name].bundle.js",
